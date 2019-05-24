@@ -1,27 +1,27 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
 
-import About from './components/about/About';
-import Blog from './components/blog/Blog';
-import Contact from './components/contact/Contact';
-import Education from './components/education/Education';
-import Experience from './components/experience/Experience';
-import Home from './components/home/Home';
-import Skills from './components/skills/Skills';
-import Work from './components/work/Work';
+import AboutContainer from './containers/about';
+import BlogContainer from './containers/blog';
+import ContactContainer from './containers/contact';
+import EducationContainer from './containers/education';
+import ExperienceContainer from './containers/experience';
+import HomeContainer from './containers/home';
+import SkillContainer from './containers/skill';
+import WorkContainer from './containers/work';
 
 class Routes extends React.Component {
   render() {
     return (
       <div>
-        <Route exact path="/" component={Home} />
-        <Route path="/about" component={About} />
-        <Route path="/blog" component={Blog} />
-        <Route path="/contact" component={Contact} />
-        <Route path="/education" component={Education} />
-        <Route path="/experience" component={Experience} />
-        <Route path="/skill" component={Skills} />
-        <Route path="/work" component={Work} />
+        <Route exact path="/" component={HomeContainer} />
+        <Route path="/about" component={AboutContainer} />
+        <Route path="/blog" component={BlogContainer} />
+        <Route path="/contact" component={ContactContainer} />
+        <Route path="/education" component={EducationContainer} />
+        <Route path="/experience" component={ExperienceContainer} />
+        <Route path="/skill" component={SkillContainer} />
+        <Route path="/work" component={WorkContainer} />
       </div>
     );
   }

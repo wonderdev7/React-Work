@@ -3,14 +3,14 @@ import React from 'react';
 
 import './about.scss';
 
-export default class AboutComponent extends React.Component {
+export default class About extends React.Component {
   render() {
     return (
       <div className="section-aboutme">
         <div className="container">
           <h3>About Me</h3>
           <div className="col-md-3">
-            <img src="/assets/man01.png" className="section-aboutme__image" alt="man" />
+            <img src="/assets/man02.png" className="section-aboutme__image" alt="man" />
           </div>
           <div className="col-md-9 info-section">
             <h4 className="info-section__name">Benjamin Thomson</h4>
